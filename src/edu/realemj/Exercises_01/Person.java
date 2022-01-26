@@ -12,6 +12,7 @@ public class Person {
     }   
     
     public static int calcMonths(int years) {
+        // Calculate months
         return years*12;
     }
 }
