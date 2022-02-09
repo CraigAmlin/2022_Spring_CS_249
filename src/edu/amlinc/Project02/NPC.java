@@ -5,14 +5,14 @@ public class NPC {
     private int str;
     private int def;
     private int spd;
-    private char status;
+    private Status stat = Status.DEAD;
 
     public NPC(){
         hp = 1;
         str = 1;
         def = 1;
         spd = 1;
-        status = 'a';
+        stat = Status.ALIVE;
     }
 
     public NPC(int h, int s, int d, int q){
@@ -20,7 +20,7 @@ public class NPC {
         str = s;
         def = d;
         spd = q;
-        status = 'a';
+        stat = Status.ALIVE;
         DeathCheck();
     }
 
@@ -36,7 +36,7 @@ public class NPC {
 
     private void DeathCheck(){
         if(hp <= 0)
-            status = 'd';
+            stat = Status.DEAD;
     }
 
     public boolean strengthCheck(int c){
@@ -50,8 +50,9 @@ public class NPC {
     public boolean defenseCheck(int c){
         return (def > c);
     }
-
-    public char checkStatus(){
-        return status;
+/*
+    public EnumBody Status checkStatus(){
+        return stat;
     }
+*/
 }
