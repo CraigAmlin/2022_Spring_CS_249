@@ -4,7 +4,8 @@ import java.util.*;
 public class Project00 {
     public static void main(String[] args){
         //^ = XOR
-
+        //break breaks out of the current loop
+        //continue skips back to the loop condition
         //loops!
         String a;
         final int LOOP_CT = 6;

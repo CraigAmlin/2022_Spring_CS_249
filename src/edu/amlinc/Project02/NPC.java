@@ -50,9 +50,9 @@ public class NPC {
     public boolean defenseCheck(int c){
         return (def > c);
     }
-/*
-    public EnumBody Status checkStatus(){
+
+    public Status checkStatus(){
         return stat;
     }
-*/
+
 }
