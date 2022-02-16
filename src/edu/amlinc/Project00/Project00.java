@@ -59,6 +59,7 @@ public class Project00 {
                 System.out.println("Check passed!");
                 break;
         }
+        //Alternative Switch Syntax!?!?
         damage = switch(roll){
             case 1,2,3 -> 0;
             case 4,5,6 -> 5;
