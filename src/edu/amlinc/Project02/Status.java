@@ -4,7 +4,6 @@ public enum Status {
     DEAD,
     ALIVE,
     STUN,
-    PARALASYS,
     BURN,
     POISON
 }

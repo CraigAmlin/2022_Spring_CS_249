@@ -5,24 +5,29 @@ public class BusinessCard {
     private String[] slogan;
     private char border;
 
-    public BusinessCard(String name, String[] sloganLines, char boundryChar){
+    public BusinessCard(String name, String[] sloganLines, char boundaryChar){
       business = name;
       slogan = sloganLines;
-      border = boundryChar;
+      border = boundaryChar;
     }
     public String getName(){
         return business;
     }
-    public char getBoundryChar(){
+    public char getBoundaryChar(){
         return border;
     }
     public String getSlogan(){
-        return slogan.toString();
+        int i;
+        String s = "";
+        for(i = 0; i < slogan.length; i++){
+            s = s + slogan[i] + "\n";
+        }
+        return s;
     }
     public void setName(String name){
         business = name;
     }
-    public void setBoundryChar(char boundryChar){
+    public void setBoundaryChar(char boundryChar){
         border = boundryChar;
     }
     public void setSlogan(String[] sloganLines){
@@ -30,18 +35,18 @@ public class BusinessCard {
     }
     public String toString(){
         String card = "";
-        String line = "";
         char space = ' ';
         int i;
-        card = multiChar(border, 42) + "/n";
-        line = border + multiChar(space,40) + border + "/n";
-        card = card + line;
-        for(i = 0; i < 4; i++){
-            line = border + space + slogan[0] + multiChar(space, 40-slogan[0].length());
-            card = card + line;
+        card = multiChar(border, 42) + "\n";
+        card = card + border + space + business + multiChar(space, 39-business.length()) + border + "\n";
+        card = card + border + multiChar(space,40) + border + "\n";
+        for(i = 0; i < slogan.length; i++){
+            card = card + border + space + slogan[i] + multiChar(space, 39-slogan[i].length()) + border + "\n";
         }
-        line = multiChar(border, 42) + "/n";
-        card = card + line;
+        for(i = slogan.length; i < 4; i++){
+            card = card + border + multiChar(space,40) + border + "\n";
+        }
+        card =card + multiChar(border, 42) + "\n";
         return card;
     }
     private String multiChar(char c, int t){
