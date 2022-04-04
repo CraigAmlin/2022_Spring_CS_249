@@ -19,4 +19,23 @@ public class Shape {
     public void setY(double y){
         pos[1] = y;
     }
+    public double getX(){
+        return pos[0];
+    }
+    public double getY(){
+        return pos[1];
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof Shape s){
+            final double ERROR = 1e-15;
+            if(s.pos[0] - this.pos[0] < ERROR && s.pos[1] - this.pos[1] < ERROR)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
 }
