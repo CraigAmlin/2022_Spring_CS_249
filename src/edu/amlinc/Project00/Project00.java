@@ -19,8 +19,7 @@ public class Project00 {
         System.out.println("Ehh, whatever man.");
 
         a = """
-        In the first age,
-        In the first battle,
+        In the first age, in the first battle,
         When the shadows first lengthened,
         One stood.
 

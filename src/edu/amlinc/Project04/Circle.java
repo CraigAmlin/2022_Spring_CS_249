@@ -1,14 +1,12 @@
 package edu.amlinc.Project04;
 
 //import java.util.*;
-public class Circle {
+public class Circle extends Shape {
     private double rad;
-    private double [] pos = new double[2];
     
     public Circle(double x, double y, double r){
+        super(x,y);
         rad = r;
-        pos[0] = x;
-        pos[1] = y;
     }
     public Circle(){
         rad = 0.0;
@@ -24,16 +22,7 @@ public class Circle {
     public void setRad(double r){
         rad = Math.max(r, 0);
     }
-    public void setPos(double x, double y){
-        setX(x);
-        setY(y);
-    }
-    public void setX(double x){
-        pos[0] = x;
-    }
-    public void setY(double y){
-        pos[1] = y;
-    }
+    
     public double getRad(){
         return rad;
     }
