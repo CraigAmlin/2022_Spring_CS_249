@@ -42,5 +42,6 @@ public class CharGen {
                 System.err.println("UNKNOWN CLASS: " + className);
             }
         }while(validClass);
+        scan.close();
     }
 }

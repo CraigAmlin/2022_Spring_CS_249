@@ -22,5 +22,6 @@ public class VitalStats {
         System.out.println("WEIGHT: " + wt + " lbs.");
         System.out.println("HEIGHT: " + htFt + "'-" + htIn + "\"");
         System.out.println("BMI: " + bmi);
+        scan.close();
     }
 }

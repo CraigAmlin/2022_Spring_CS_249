@@ -49,7 +49,7 @@ public class Project00 {
         switch(roll){
             case 1:
                 System.out.println("Nat 1!");
-            case 2,3:
+            case 2,3,4:
                 System.out.println("Failed check!");
                 break;
             case 20:
@@ -60,9 +60,9 @@ public class Project00 {
         }
         //Alternative Switch Syntax!?!?
         damage = switch(roll){
-            case 1,2,3 -> 0;
-            case 4,5,6 -> 5;
-            case 7,8,9,10 -> 12;
+            case 1,2,3,4 -> 0;
+            case 5,6,7 -> 5;
+            case 8,9,10 -> 12;
             case 11,12,13,14 -> 18;
             case 15,16,17 -> 24;
             case 18,19 -> 30;

@@ -23,6 +23,7 @@ public class LOTRQuiz {
             if(!bigStr && !bigWis)
                 System.out.println("GOLLUM!");
         }
+        scan.close();
     }
     
 }

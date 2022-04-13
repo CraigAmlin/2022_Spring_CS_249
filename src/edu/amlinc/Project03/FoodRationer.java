@@ -16,5 +16,6 @@ public class FoodRationer {
         day = pop * rations;
         time = food / day;
         System.out.println("Your party will survive " + time + " days with " + food + " pounds of food.");
+        scan.close();
     }
 }

@@ -25,5 +25,7 @@ public class BookOfLostTales {
         fangorn.printAllGiants();
         fangorn.printAllTrees();
         fangorn.printAllTrolls();
+
+        input.close();
     }
 }
