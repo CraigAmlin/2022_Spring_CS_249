@@ -1,6 +1,6 @@
 package edu.amlinc.Project04;
 
-public class Shape {
+public abstract class Shape {
     protected double [] pos = new double[2];
 
     public Shape(){}
@@ -25,6 +25,8 @@ public class Shape {
     public double getY(){
         return pos[1];
     }
+
+    abstract public double getArea();
 
     @Override
     public boolean equals(Object obj){
