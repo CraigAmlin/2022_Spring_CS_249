@@ -74,5 +74,6 @@ public class Project00 {
         boolean recoil = (roll==1) ? true:false;
         if(recoil)
             System.out.println("Taken 12 recoil damage!");
+        
     }
 }

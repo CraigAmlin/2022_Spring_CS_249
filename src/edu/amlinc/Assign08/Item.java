@@ -28,18 +28,18 @@ public class Item implements Loadable {
 
     public String toString(){
         String out = ID + " with value " + value;
-        return
+        return out;
     }
 
     public void load(Scanner in) throws GameFileException{
         try{
             ID = in.next();
-            value = in.nextInt()
+            value = in.nextInt();
         }
         catch (Exception e){
             ID = "";
             value = 0;
-            throw new GameFileException("Error loading item", e)
+            throw new GameFileException("Error loading Item", e);
         }
     }
 }

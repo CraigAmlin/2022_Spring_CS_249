@@ -1,5 +1,6 @@
 package edu.amlinc.Assign08;
 
+import java.util.*;
 public class Book extends Item {
     protected String skill = "";
 
@@ -19,7 +20,7 @@ public class Book extends Item {
     }
 
     public void read(){
-        System.out.println("Skill " + skill + " increased!")
+        System.out.println("Skill " + skill + " increased!");
     }
     public String toString(){
         return super.toString() + ", enhances " + skill;
@@ -34,7 +35,7 @@ public class Book extends Item {
             setID("");
             setValue(0);
             skill = "";
-            throw new GameFileException("Error loading book", e);
+            throw new GameFileException("Error loading Book", e);
         }
     }
 }

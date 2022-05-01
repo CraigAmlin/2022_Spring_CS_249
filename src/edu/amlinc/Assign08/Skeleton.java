@@ -11,7 +11,7 @@ public class Skeleton extends Creature {
     public String toString(){
         return "Skeleton at " + getRow() + "," + getCol();
     }
-    public void draw(Charimage map){
+    public void draw(CharImage map){
         map.setPos(row,col,'S');
     }
 }

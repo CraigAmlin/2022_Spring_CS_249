@@ -1,6 +1,6 @@
 package edu.amlinc.Assign08;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
-import edu.realemj.Testing.GeneralTesting;
+import edu.amlinc.Testing.GeneralTesting;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

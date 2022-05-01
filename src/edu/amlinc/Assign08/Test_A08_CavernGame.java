@@ -1,6 +1,6 @@
 package edu.amlinc.Assign08;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
-import edu.realemj.Testing.*;
+import edu.amlinc.Testing.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.*;

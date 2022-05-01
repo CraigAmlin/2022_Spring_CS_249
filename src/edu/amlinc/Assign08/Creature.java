@@ -1,6 +1,7 @@
 package edu.amlinc.Assign08;
 
-public abstract class Creature {
+import java.util.*;
+public abstract class Creature implements Drawable, Loadable{
     protected int row = 0;
     protected int col = 0;
 
@@ -28,12 +29,12 @@ public abstract class Creature {
     public void load(Scanner in) throws GameFileException{
         try{
             row = in.nextInt();
-            col = in.nextCol()
+            col = in.nextInt();
         }
         catch(Exception e){
             row = 0;
             col = 0;
-            throw GameFileException("Error loading creature",e);
+            throw new GameFileException("Error loading Creature",e);
         }
     }
 }
